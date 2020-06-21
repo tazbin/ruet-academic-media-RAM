@@ -1,7 +1,12 @@
 <?php
   include 'header.php';
   if ( !isset($_SESSION['user_name']) || $_SESSION['status']!="teacher"  ) {
-     header("Location: index.php?authentication=protected");
+    //  header("Location: index.php?authentication=protected");
+    ?>
+    <script>
+        window.location.href="index.php?authentication=protected";
+    </script>
+    <?php
      exit();
   }
  ?>
@@ -38,7 +43,7 @@
 
               <div class="col text-center mt-3">
                 <div class="card mx-auto shadow" style="width: 18rem;">
-                  <img src="image/Attendance.jpg" style="height:140px; width:180" class="card-img-top" alt="...">
+                  <img src="image/attendance_2.jpg" style="height:140px; width:100%; object-fit: cover" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Attendance</h5>
                     <p class="card-text text-muted" style="font-size: 10px">Click to take Attendance & the result will be automatically generated in real time!</p>
@@ -51,7 +56,7 @@
 
               <div class="col text-center mt-3">
                 <div class="card mx-auto shadow" style="width: 18rem;">
-                  <img src="image/result.jpeg" style="height:140px; width:180" class="card-img-top" alt="...">
+                  <img src="image/result.jpeg" style="height:140px; width:100%; object-fit: cover" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Result</h5>
                     <p class="card-text text-muted" style="font-size: 10px">Realease exam results here & each students will be notified with their own score!</p>
@@ -64,7 +69,7 @@
 
               <div class="col text-center mt-3">
                 <div class="card mx-auto shadow" style="width: 18rem;">
-                  <img src="image/n.jpg" style="height:140px; width:180" class="card-img-top" alt="...">
+                  <img src="image/n.jpg" style="height:140px; width:100%; object-fit: cover" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Notice</h5>
                     <p class="card-text text-muted" style="font-size: 10px">Write a notice as a text, sent it & it will be stored & reached to each student instantly!</p>

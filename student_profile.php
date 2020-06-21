@@ -1,7 +1,12 @@
 <?php
 include 'header.php';
   if ( !isset($_SESSION['user_name']) || $_SESSION['status']!="student"  ) {
-     header("Location: index.php?authentication=protected");
+    //  header("Location: index.php?authentication=protected");
+    ?>
+    <script>
+        window.location.href="index.php?authentication=protected";
+    </script>
+    <?php
      exit();
   }
  ?>

@@ -48,7 +48,8 @@
     <div style="background-color: rgba(227, 232, 231, 0.55)" class="shadow">
       <div class="container" style="padding-top:50px; padding-bottom:50px">
         <div class="row align-iteams-center">
-          <div class="col-8 d-none d-sm-block">
+          <!--<div class="col-8 d-none d-sm-block">-->
+              <div class="col-lg-8 d-none d-md-block">
             <h3 class="display-3"><strong class="text-success">R</strong>uet <strong class="text-success">A</strong>cademic <strong class="text-success">M</strong>edia</h3>
             <hr>
             <br>
@@ -60,7 +61,8 @@
             </p>
           </div>
 
-          <div class="shadow col-12 col-sm-4 bg-light container" style="border-radius: 20px">
+          <!--<div class="shadow col-12 col-sm-4 bg-light container" style="border-radius: 20px">-->
+          <div class="shadow col-12 col-md-12 col-lg-4 bg-light container" style="border-radius: 20px">
 
 
             <!-- logout form -->
